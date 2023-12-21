@@ -33,7 +33,7 @@ class LinkedList {
     if (temp == null) {
       print('the list is empty');
     }
-    print('the list is ');
+
     while (temp != null) {
       print(temp.data);
       temp = temp.next;
@@ -46,7 +46,7 @@ class LinkedList {
     if (temp == null) {
       print('the list is empty');
     }
-    print('the list is ');
+
     while (temp != null) {
       print(temp.data);
       temp = temp.prev;
@@ -140,15 +140,21 @@ void main() {
   newLinkedList.addNode(7);
   newLinkedList.addNode(8);
   newLinkedList.addNode(9);
+    print('the array after inserting is');
   newLinkedList.display();
+    print('the array after reversing is');
   newLinkedList.displayReversed();
-  // newLinkedList.delete(1);
-  // newLinkedList.delete(9);
-  // newLinkedList.delete(5);
-  // newLinkedList.display();
-  // newLinkedList.insert(1, 0);
-  // newLinkedList.insert(6, 0);
-  // newLinkedList.insert(9, 0);i
+  newLinkedList.delete(1);
+  newLinkedList.delete(9);
+  newLinkedList.delete(5);
+    print('the array after deleting is');
+  newLinkedList.display();
+  newLinkedList.insert(1, 0);
+  newLinkedList.insert(6, 0);
+  newLinkedList.insert(9, 0);
+    print('the array after inserting after is');
+      newLinkedList.display();
   newLinkedList.insertBefore(7, 0);
+    print('the array after inserting before is');
   newLinkedList.display();
 }

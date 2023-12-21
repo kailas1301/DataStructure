@@ -39,7 +39,7 @@ class Linkedlist {
 
     while (temp != null) {
       Node? next = temp.next;
-      while (next != null && next.data ==temp.data) {
+      while (next != null && next.data == temp.data) {
         next = next.next;
       }
       temp.next = next;
@@ -62,9 +62,11 @@ void main() {
   newlist.addnode(70);
   newlist.addnode(70);
   newlist.addnode(90);
+  print('the array after inserting is');
   newlist.display();
   print('--------------');
   newlist.removeduplicates(10);
   newlist.removeduplicates(70);
+  print('the array after removing duplicate is');
   newlist.display();
 }

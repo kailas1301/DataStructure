@@ -3,18 +3,28 @@ class BinarySearch {
     int startIndex = 0;
     int endIndex = nums.length - 1;
     while (startIndex <= endIndex) {
- int middleIndex = startIndex + ((endIndex - startIndex) / 2).toInt();
+      int middleIndex = startIndex + ((endIndex - startIndex) / 2).toInt();
       if (nums[middleIndex] == target) {
         return middleIndex;
-      } else if (target >nums [middleIndex]) {
+      } else if (target > nums[middleIndex]) {
         startIndex = middleIndex + 1;
-      } else if (target <nums[ middleIndex]) {
+      } else if (target < nums[middleIndex]) {
         endIndex = middleIndex - 1;
       }
     }
     return -1;
   }
 }
+
+// int findTarget(int start, int end, int target) {
+//  int middle = ((end + start) / 2).floor();
+//   if (middle == target) {
+//     return middle;
+//   }
+//   else if(middle<){
+
+//   }
+// }
 
 void main() {
   List<int> nums = [1, 2, 3, 4, 5, 6, 7];

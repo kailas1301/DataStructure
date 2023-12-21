@@ -175,8 +175,6 @@
 //   newLinkedList.display();
 // }
 
-
-
 class Node {
   int? data;
   Node? next;
@@ -267,7 +265,6 @@ class LinkedList {
     newNode.next = temp.next;
     temp.next = newNode;
   }
-
 }
 
 void main() {
@@ -281,14 +278,17 @@ void main() {
   newLinkedList.addNode(7);
   newLinkedList.addNode(8);
   newLinkedList.addNode(9);
+  print('the array after inserting is');
   newLinkedList.display();
-  //  newLinkedList.display();
-  // newLinkedList.deleteNode(1);
-  // newLinkedList.deleteNode(5);
-  // newLinkedList.deleteNode(9);
-  // newLinkedList.display();
-  //  newLinkedList.insert(6,0);
+  newLinkedList.deleteNode(1);
+  newLinkedList.deleteNode(5);
+  newLinkedList.deleteNode(9);
+    print('the array after deleting is');
   newLinkedList.display();
-  newLinkedList.insertBefore(9, 0);
+    print('the array inserting after 6');
+  newLinkedList.insert(6, 0);
+  newLinkedList.display();
+    print('the array before inserting 6 is');
+  newLinkedList.insertBefore(8, 0);
   newLinkedList.display();
 }
