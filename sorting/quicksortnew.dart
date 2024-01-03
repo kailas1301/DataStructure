@@ -1,4 +1,4 @@
-void quickSortHelper(List array, int first, int last) {
+void quickSort(List array, int first, int last) {
   // Base case: If the sublist has 0 or 1 elements, it is already sorted
   if (first >=last) {
     return;
@@ -36,13 +36,13 @@ void quickSortHelper(List array, int first, int last) {
   array[pivotIndex] = temp;
 
   // Recursively sort the two sublists
-  quickSortHelper(array, first, end - 1);
-  quickSortHelper(array, end + 1, last);
+  quickSort(array, first, end - 1);
+  quickSort(array, end + 1, last);
 }
 
 void main() {
-  List list = [98, 5, 2, 45, 25, 1, 55];
-  quickSortHelper(list, 0, list.length - 1);
+  List list = [21,12,98, 5, 2, 45, 25, 1,3, 55];
+  quickSort(list, 0, list.length - 1);
 
   print("-----------------------------");
   print(list);
