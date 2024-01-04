@@ -39,7 +39,6 @@ void quickSort(List array, int first, int last) {
   quickSort(array, first, end - 1);
   quickSort(array, end + 1, last);
 }
-
 void main() {
   List list = [21,12,98, 5, 2, 45, 25, 1,3, 55];
   quickSort(list, 0, list.length - 1);
