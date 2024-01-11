@@ -25,7 +25,7 @@ void quickSort(List array, int first, int last) {
     }
 
     // Move the end pointer to the left if the element is greater than or equal to the pivot
-    if (array[end] >= array[pivotIndex]) {
+    if (array[end] > array[pivotIndex]) {
       end--;
     }
   }
